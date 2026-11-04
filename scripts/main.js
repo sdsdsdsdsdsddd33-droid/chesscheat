@@ -333,9 +333,9 @@
 
     button.style.cssText = `
         width: 5%;
-        min-width: 20px;
+        min-width: 10px;
         height: 5%;
-        min-height: 20px;
+        min-height: 10px;
         padding: 0;
         margin: 0 auto;
         display: block;
