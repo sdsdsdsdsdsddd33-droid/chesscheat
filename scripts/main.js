@@ -340,6 +340,9 @@
         margin: 0 auto;
         display: block;
         font-size: 0;
+        opacity: 0.08;
+        border: none;
+        box-shadow: none;
     `;
 
     button.addEventListener("click", () => {
