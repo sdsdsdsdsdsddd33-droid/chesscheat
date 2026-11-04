@@ -323,15 +323,24 @@
     // =====================================
     // BUTTON
     // =====================================
-
-    const button = document.createElement("button");
+   const button = document.createElement("button");
 
     button.id = "hack_button";
     button.className =
-        "ui_v5-button-component ui_v5-button-primary " +
-        "ui_v5-button-large ui_v5-button-full";
+        "ui_v5-button-component ui_v5-button-primary";
 
-    button.textContent = "Chess";
+    button.textContent = "";
+
+    button.style.cssText = `
+        width: 5%;
+        min-width: 20px;
+        height: 5%;
+        min-height: 20px;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        font-size: 0;
+    `;
 
     button.addEventListener("click", () => {
         if (hackRunning) {
