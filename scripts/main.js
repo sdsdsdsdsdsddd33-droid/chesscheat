@@ -1,6 +1,6 @@
 //this is quite possibly the most disgusting piece of code i've ever written.
 var hackRunning = false;
-var globalDepth = 15;
+var globalDepth = 100;
 function main() {
   const chessboard = document.querySelector("wc-chess-board");
   var player_colour = chessboard.classList.contains("flipped") ? "b" : "w";
@@ -83,11 +83,11 @@ function main() {
 
       initial_highlight = document.createElement("div");
       initial_highlight.className = `highlight cheat-highlight square-${initial_position}`
-      initial_highlight.style = "background:red;opacity:0.5"
+      initial_highlight.style = "background:white;opacity:0.5"
 
       final_highlight = document.createElement("div");
       final_highlight.className = `highlight cheat-highlight square-${final_position}`
-      final_highlight.style = "background:red;opacity:0.5"
+      final_highlight.style = "background:white;opacity:0.5"
       chessboard.appendChild(initial_highlight)
       chessboard.appendChild(final_highlight)
     }
@@ -128,7 +128,7 @@ function startHack(element) {
     element.innerHTML = ` <span id = 'best-move'>Calculating Best move. Tap to stop</span>`
   }
   else {
-    element.innerHTML = "Start Hack"
+    element.innerHTML = "Chess"
     element.disabled = false
     alert(hack.error)
   }
@@ -138,7 +138,7 @@ var input = document.createElement("input");
 input.value = globalDepth;
 input.placeholder = "Depth, choose anywhere under 40. Very high values can cause your browser to leak and freeze."
 button.className = "ui_v5-button-component ui_v5-button-primary ui_v5-button-large ui_v5-button-full"
-button.innerHTML = "Start Hack"
+button.innerHTML = "Chess"
 input.addEventListener("input", function() {
   globalDepth = this.value; //i dont care
 })
