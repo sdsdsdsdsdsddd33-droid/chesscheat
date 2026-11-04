@@ -83,11 +83,11 @@ function main() {
 
       initial_highlight = document.createElement("div");
       initial_highlight.className = `highlight cheat-highlight square-${initial_position}`
-      initial_highlight.style = "background:white;opacity:0.5"
+      initial_highlight.style = "background:white;opacity:0.2"
 
       final_highlight = document.createElement("div");
       final_highlight.className = `highlight cheat-highlight square-${final_position}`
-      final_highlight.style = "background:white;opacity:0.5"
+      final_highlight.style = "background:white;opacity:0.2"
       chessboard.appendChild(initial_highlight)
       chessboard.appendChild(final_highlight)
     }
