@@ -120,7 +120,7 @@
         destination.className = `highlight cheat-highlight square-${to}`;
 
         destination.style.cssText = `
-            background: rgba(255, 0 0, 0.30);
+            background: rgba(255, 0, 0, 0.30);
             pointer-events: none;
         `;
 
