@@ -7,7 +7,7 @@
     // =====================================
 
     const CONFIG = {
-        movetime: 2500,
+        movetime: 2000,
         threads: 2,
         hash: 256,
         multiPV: 1,
