@@ -112,7 +112,7 @@
         start.className = `highlight cheat-highlight square-${from}`;
 
         start.style.cssText = `
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 0, 0, 0.30);
             pointer-events: none;
         `;
 
@@ -120,7 +120,7 @@
         destination.className = `highlight cheat-highlight square-${to}`;
 
         destination.style.cssText = `
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 0 0, 0.30);
             pointer-events: none;
         `;
 
