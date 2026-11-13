@@ -6,7 +6,7 @@
     // =====================================
 
     const CONFIG = {
-        movetime: 3000,
+        movetime: 500,
         threads: 4,
         hash: 512,
         multiPV: 2,
@@ -112,7 +112,7 @@
         start.className = `highlight cheat-highlight square-${from}`;
 
         start.style.cssText = `
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.25);
             pointer-events: none;
         `;
 
@@ -120,7 +120,7 @@
         destination.className = `highlight cheat-highlight square-${to}`;
 
         destination.style.cssText = `
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.25);
             pointer-events: none;
         `;
 
